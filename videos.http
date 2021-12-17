@@ -1,0 +1,29 @@
+@api = http://localhost:4000
+
+GET {{api}}/video/61bbac9fa2bc2450e18851c8
+
+
+###get videos
+GET {{api}}/videos
+
+
+### create video
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.comsswf/watch?v=0k_WQouziM0",
+    "title": "naqruto shippuden",
+    "description":"Esto es un anime" 
+}
+
+###
+DELETE {{api}}/videos/61bbacc6a2bc2450e18851cc
+
+###
+PUT  {{api}}/videos/61bbacc6a2bc2450e18851ce
+Content-Type: application/json
+
+{
+    "description":"Esto dejo de ser un anime" 
+}
